@@ -6,6 +6,6 @@ const myFirstController = require('./controllers/myFirstController');
 
 app.get('/', myFirstController.helloWorld);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('My First API Running!')
 });
