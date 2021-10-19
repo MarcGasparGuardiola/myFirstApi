@@ -6,6 +6,7 @@ require('dotenv');
 const myFirstController = require('./controllers/myFirstController');
 
 app.use('/api/v1/user', require('./routes/userRoutes'))
+app.use('/api/v1/ex1', require('./routes/exercici1Routes'))
 
 app.get('/', myFirstController.helloWorld);
 
