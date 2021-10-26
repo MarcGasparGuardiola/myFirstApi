@@ -1,5 +1,5 @@
 const { param } = require("../routes/exercici4Routes");
-var bodyParser = require('body-parser')
+
 
 const status = {
     ok:200,
@@ -14,7 +14,7 @@ module.exports = {
         console.log(req.body);
         const x = Number(req.body.x);
         const y = Number(req.body.y);
-        const result = 0;
+        let result = 0;
         switch (op) {
             case 'sum':
                 result = x + y;

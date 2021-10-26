@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser')
 require('dotenv');
 
+app.use(bodyParser.json())
 
 const myFirstController = require('./controllers/myFirstController');
 
