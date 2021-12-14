@@ -1,6 +1,3 @@
-const { param } = require("../routes/exercici4Routes");
-
-
 const status = {
     ok:200,
     notFound: 404,
